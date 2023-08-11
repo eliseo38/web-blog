@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table style="width: 500px;"> 
+        <thead> <!-- el <thead> y <tbody>
+            sirve para que otros bnavegadores muestren la tabla correctamente
+            asi que si es algo obligatorio-->
+            <tr>
+                <th>Porducto</th>
+                <th>Precio</th>
+             </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Agua</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>12,00$</td>
+            </tr>
+            <tr>
+                <td>Chocolate Americano con moca</td>
+                <td>132,0000$</td>
+            </tr>
+
+        </tbody> 
+        <tfoot>
+            <td></td>
+            <td>Total: 144,000$</td>
+        </tfoot>
+    </table>
+
+    <!--ul es una lista no ordenada-->
+    <ul>
+        <li> Elemento 1</li>
+        <li> Elemento 2</li>
+        <li> Elemento 3</li>
+        <li> Elemento 4</li>
+    </ul>
+
+    <ol>
+        <li value="50"> Elemento 1</li>
+        <li> Elemento 2</li>
+        <li> Elemento 3</li>
+        <li> Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemto 1</li>
+                <li style="list-style-type: lower-roman;">sub elemto 2</li>
+                <li style="list-style-type: lower-greek;">sub elemto 3</li>
+                <li style="list-style-type: lower-alpha;">sub elemto 4</li>
+            </ol>
+        </li>
+        
+    </ul>
+
+    <h1> chanchito felix</h1>
+
+    <form action="/formulario" method="POST"> <!--Get  en method solo permite 256 caracteres,
+                                                asi que no es muy beneficioso utilizarlo-->
+        <label for="nombre"> Nombre</label>
+        <input value="felix" type="text"  id="nombre" name="nombre" placeholder="Name"/>
+        <br>
+        <label form="apellido">Apelllido</label>
+        <input value="chanchito" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br>
+        <label form="comentario">Comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" name="comentario " placeholder="Escriba su comentario"></textarea>
+        <br>
+        <input type="submit"/>
+        <button type="button">Tipo botón</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit"> Tipo submit</button>
+
+    </form>
+    <p>chanchito esta muy triste</p>
+    <hr>
+    <h2> probando una nueva etiqueta</h2>
+    <!-- este texto no tendria porque aparecer en el navegador
+    por ya esta configurado-->
+    <p>Este testo es una<span style="color:blue"> prueba</span></p>
+    
+    <a target="_blank " href="https://www.google.com">Ir a google</a> <br>
+    <a target="_blank"  href="https://es.wikipedia.org/wiki/Peque%C3%B1a_y_mediana_empresa#:~:text=La%20peque%C3%B1a%20y%20mediana%20empresa,por%20los%20Estados%20o%20regiones."> Empresa pyme</a>
+    <br><hr>
+    <img src="img/igle.jpg" width="400"/><!--height   este propiedad sirve para modificar el alto de una imagen-->
+
+    <form>
+        <label >apellido</label>
+        <input />
+
+    </form>
+</body>
+</html>
